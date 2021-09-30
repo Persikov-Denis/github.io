@@ -1,0 +1,316 @@
+$mainColor: #D41443;
+
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    .header__common {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin-top: 37px;
+    }
+
+    .header__menu {
+        margin-top: -8px;
+
+        ul {
+            display: flex;
+        }
+
+        .header__item {
+            margin-right: 35px;
+
+            a {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 21px;
+                text-decoration: none;
+                letter-spacing: 0.4px;
+                color: #fff;
+
+                &:hover {
+                    color: $mainColor;
+                    transition: 0.5s;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        } 
+    }
+
+    .header__btn {
+        width: 159px;
+        height: 44px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: $mainColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        margin-top: -8px;
+
+        &:hover {
+            background: #ECEBEB;
+            transition: 0.5s;
+        }
+
+        img {
+            margin-top: 2px;
+            margin-left: 12px;
+        }
+    }
+}
+
+.banner {
+    background-color: #FFB8CA;
+
+    .banner__common {
+        display: flex;
+        max-width: 1160px;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+
+    .banner__heading,
+    .banner__heading-two {
+        font-family: 'Titan One', cursive;
+        font-style: normal;
+        font-weight: normal;
+        width: 277px;
+        padding-top: 171px;
+        margin-left: 90px;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .banner__heading-two {
+        line-height: 52,49px;
+        font-size: 58px;
+        padding: 0;
+        color: $mainColor;
+    }
+
+    .banner__btn-one,
+    .banner__btn-two {
+        width: 104px;
+        height: 40px;
+        background: #D41443;
+        border-radius: 20px;
+        font-family: 'DM Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        border: none;
+        margin-top: 29px;
+        margin-left: 90px;
+
+        &:hover {
+            background-color: #C7133E;
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+
+    .banner__btn-two {
+        width: 138px;
+        margin-left: 10px;
+        background-color: #fff;
+        color: $mainColor;
+
+        &:hover {
+            background-color: #ECEBEB;
+            transition: 0.5s;
+            color: $mainColor;
+        }
+    }
+
+    .banner__eco {
+        display: flex;
+        align-items: center;
+        margin-top: 56px;
+        margin-left: 51px;
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            width: 200px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            margin-left: 31px;
+            color: #FFFFFF;
+        }
+    }
+
+    .banner__bg-iceCream {
+        background: url(../img/banner/bg.png) no-repeat;
+        background-size: 100% 100%;
+        width: 538px;
+        height: 538px;
+        margin-top: 50px;
+        margin-left: -18px;
+        position: relative;
+
+        img {
+            margin-left: 118px;
+            margin-top: 56px;
+        }
+    }
+
+    .banner__number-common {
+        margin-top: 159px;
+        margin-left: 97px;
+    }
+
+    .banner__number {
+        position: relative;
+        margin-bottom: 20px;
+
+        p {
+            font-family: 'Titan One', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 46px;
+            line-height: 53px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $mainColor;
+            position: relative;
+            z-index: 1;
+        }
+
+        span {
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+        }
+    }
+
+    .banner__item {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 42px;
+        top: -4px;
+    }
+
+    .banner__bg-tasty {
+        background: url(../img/banner/pic4.png);
+        width: 293px;
+        height: 232px;
+        position: absolute;
+        top: 382px;
+        right: -156px;
+    }
+}
+
+.products {
+
+    .products__common {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-family: 'Titan One', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-top: 127px;
+        margin-bottom: 16px;
+        color: #FFA5BA;
+    }
+
+    h2 {
+        font-family: 'Titan One', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 58px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #D41443;
+    }
+
+    .products__item {
+        width: 329px;
+        height: 525px;
+        margin-top: 259px;
+        background: #FFB8CA;
+        border-radius: 24px;
+        position: relative;
+
+        h4 {
+            font-family: 'Titan One', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-top: 163px;
+        }
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            width: 241px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 176%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            margin: auto;
+            margin-top: 70px;
+        }
+    }
+
+    .products__img {
+        position: absolute;
+        top: -206px;
+    }
+
+    .products__item--two {
+        background: #F0D1A5;
+    }
+
+    .products__item--three {
+        background: #C2E297;
+    }
+
+}
