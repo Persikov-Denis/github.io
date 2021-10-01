@@ -219,7 +219,8 @@ export default {
 .columns {
   box-shadow: 0px 0px 5px black;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-right: 13px;
+  margin-bottom: 13px;
 }
 
 .columns__card {

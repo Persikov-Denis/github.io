@@ -43,12 +43,14 @@
           </div>
         </div>
 
-        <div class="wrapper__columns">
-          <Columns
-            v-for="(column, indexColumn) in ALL_COLUMNS"
-            :key="indexColumn"
-            :column="column"
-          />
+        <div class="wrapper__common-columns">
+          <div class="wrapper__common">
+            <Columns
+              v-for="(column, indexColumn) in ALL_COLUMNS"
+              :key="indexColumn"
+              :column="column"
+            />
+          </div>
 
           <AddColumn />
           <Tags />
@@ -131,9 +133,15 @@ body {
   cursor: pointer;
 }
 
+.wrapper__common {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
 .container {
   margin: auto;
-  max-width: 1265px;
+  max-width: 1310px;
 }
 
 .wrapper__users {
@@ -180,7 +188,7 @@ body {
   font-size: 12px;
 }
 
-.wrapper__columns {
+.wrapper__common-columns {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -190,7 +198,6 @@ body {
   background-image: url(../assets/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 625px;
   font-family: "Roboto", sans-serif;
   color: #2c3e50;
 }

@@ -29,9 +29,8 @@
   </div>
 </template>
 
-
 <script>
-import {mapActions} from 'vuex';
+import { mapActions } from "vuex";
 export default {
   name: "AddColumn",
 
@@ -43,11 +42,11 @@ export default {
   },
 
   methods: {
-    ...mapActions(['ADD_COLUMN']),
+    ...mapActions(["ADD_COLUMN"]),
 
     addColumn() {
-        this.ADD_COLUMN(this.columTitle);
-        this.columTitle = '';
+      this.ADD_COLUMN(this.columTitle);
+      this.columTitle = "";
     },
 
     showCard() {
@@ -90,7 +89,7 @@ export default {
 }
 
 .add-column__button-img img {
-  width: 25px;
+  width: 23px;
   margin-left: 8px;
   cursor: pointer;
 }
@@ -114,17 +113,17 @@ export default {
 }
 
 .add-column__input {
-  width: 230px;
+  width: 170px;
   border-radius: 5px;
-  font-size: 14px;
-  height: 40px;
+  font-size: 13.5px;
+  padding-left: 4px;
+  height: 38px;
   margin-bottom: 3px;
-  padding-left: 7px;
   box-sizing: border-box;
 }
 
 .add-column__button-add {
-  width: 150px;
+  width: 130px;
   height: 33px;
   background-color: #5aac44;
   color: #fff;
